@@ -1,0 +1,129 @@
+.popular-container {
+  padding-top: 40px;
+  padding-bottom: 62px;
+
+  padding-left: 0;
+  padding-right: 0;
+}
+.popular-heading {
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+.popular-wrapper {
+  display: flex;
+  gap: 16px;
+  height: 67px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.popular-wrapper img {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+}
+.popular-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.popular-name {
+  margin-bottom: 8px;
+
+  overflow-y: hidden;
+  height: 17px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.28;
+  text-transform: uppercase;
+
+  text-overflow: ellipsis;
+}
+.popular-name::-webkit-scrollbar {
+  width: 8px; /* Ширина скроллбара */
+}
+
+.popular-name::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: rgba(5, 5, 5, 0.18);
+}
+.popular-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.popular-description {
+  height: 35px;
+
+  overflow-y: scroll;
+  color: rgba(5, 5, 5, 0.8);
+  text-overflow: ellipsis;
+  /* white-space: normal; */
+  font-size: 12px;
+  line-height: 1.33;
+
+  overflow: hidden;
+
+  /* Скрыть колесо прокрутки */
+  scrollbar-width: none; /* Для Firefox */
+  -ms-overflow-style: none; /* Для IE и Edge */
+  -webkit-line-clamp: 3; /* Ограничиваем количество строк до 3 */
+}
+
+.popular-description::-webkit-scrollbar {
+  width: 8px; /* Ширина скроллбара */
+}
+.popular-description::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: rgba(5, 5, 5, 0.18);
+}
+
+@media screen and (min-width: 768px) {
+  .popular-container {
+    padding: 0;
+  }
+  .popular-wrapper {
+    width: 176px;
+  }
+  .filters-form {
+  }
+  .filters-main-box {
+  }
+  .popular-wrapper img {
+    width: 48px;
+    height: 48px;
+  }
+  .popular-heading {
+    margin-bottom: 32px;
+  }
+  .popular-description {
+    font-size: 10px;
+
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .popular-container {
+    width: 235px;
+  }
+
+  .popular-heading {
+    font-size: 24px;
+  }
+
+  .popular-name {
+    font-size: 14px;
+    width: 155px;
+  }
+
+  .popular-box-text {
+    width: 155px;
+  }
+}
